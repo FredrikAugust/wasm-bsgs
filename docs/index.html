@@ -7,6 +7,11 @@
   <body>
     <h1>Discrete Logarithm Problem (i64) with WebAssembly</h1>
 
+    <small
+      >Might result in unexpected behaviour if the numbers go over i64::MAX at
+      any point during the calculation, so use with caution.</small
+    >
+
     <p>
       Solves for <code>x</code> such that <code>alpha^x \mod n \equiv h</code>.
     </p>
