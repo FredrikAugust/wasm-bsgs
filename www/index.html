@@ -1,11 +1,39 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <title>Hello wasm-pack!</title>
   </head>
   <body>
-    <noscript>This page contains webassembly and javascript content, please enable javascript in your browser.</noscript>
+    <h1>Discrete Logarithm Problem (i64) with WebAssembly</h1>
+
+    <p>
+      Solves for <code>x</code> such that <code>alpha^x \mod n \equiv h</code>.
+    </p>
+
+    <label for="modulo">Modulo (n)</label>
+    <input id="modulo" type="number" placeholder="Modulo (n)" />
+
+    <br />
+    <label for="alpha">alpha (g)</label>
+    <input id="alpha" type="number" placeholder="alpha (g)" />
+
+    <br />
+    <label for="beta">beta (h)</label>
+    <input id="beta" type="number" placeholder="beta (h)" />
+
+    <br />
+    <br />
+    <button id="solve">Solve!</button>
+
+    <hr />
+
+    <p>Solution: <span id="result">-</span>.</p>
+
+    <noscript
+      >This page contains webassembly and javascript content, please enable
+      javascript in your browser.</noscript
+    >
     <script src="./bootstrap.js"></script>
   </body>
 </html>
